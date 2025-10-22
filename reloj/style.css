@@ -1,0 +1,41 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #001f3f, #0074D9);
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+}
+
+
+.hero {
+    text-align: center;
+}
+
+.contenedor {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+
+.reloj {
+    font-size: 80px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+
+.reloj span {
+    animation: parpadeo 1s infinite alternate;
+}
+
+@keyframes parpadeo {
+    from { opacity: 1; }
+    to { opacity: 0.8; }
+}
